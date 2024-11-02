@@ -1,0 +1,441 @@
+GLOBALID OR DEFENSE CONSTANTIDS	GLOBAL VALUE OR DAMAGE CONSTANTID	COMMENT
+0	0.2	Universe (sizing) lens multiplier.
+1	5000	Universe (sizing) radius modifier.
+2	25	Universe (sizing) outer bounds modifier.
+3	15	Ship (speed) modifier (exiting an aleph).
+4	50	Ship (speed) modifier (exiting a station).
+5	0.1	Shield (damage) 'downed' variable (determine if shields are down).
+6	60	Payday (economy) timer (# sec/payday).
+7	90	He3 asteroid (economy) capacity. 
+8	80	He3 mineral (economy) unit price (worth).
+9	1400	He3 amount (economy) in universe per team.
+10	0.2	Ship (equipment, speed) time to mount.
+11	16000	Starting cash base (economy).
+12	72000	Prosperity cash (game type) goal base.
+13	10	Ripcord time (speed) base (seconds).
+14	0.000166667	He3 regeneration (economy) rate.
+15	2	Point modifier (rank) for finding an aleph.
+16	1	Point modifier (rank) for finding a rock.
+17	5	Point modifier (rank) for retrieving a tech.
+18	25	Point modifier (rank) for destroying a miner.
+19	20	Point modifier (rank) for destroying a builder (constructor).
+20	10	Point modifier (rank) for destroying a layer (caltrop/tower).
+21	10	Point modifier (rank) for destroying a carrier (drone).
+22	10	Point modifier (rank) for destroying a player.
+23	25	Point modifier (rank) for destorying a base.
+24	100	Point modifier (rank) for capturing a base.
+25	10	Point modifier (rank) for retrieving a flag.
+26	10	Point modifier (rank) for recovering an artifcat.
+27	5	Point modifier (rank) for picking up a pod.
+28	1.25	Combat rating modifier (rank) added to kill math
+29	100	Combat rating modifier (rank) divided by kill math.
+30	600	Payday (economy) size ($/payday).
+31	200	Escape pod (gameplay) O2 supply.
+32	10	Warp bomb detonation timer.
+33	0.5	Cost to update (performance) lifepods.
+34	0.5	Cost to update (performance) turrets.
+35	0.5	Cost to update (performance) drones.
+36	1	Cost to update (performance) players.
+37	-72	Base sector update cost (performance) in a sector.
+38	400	Cost to update (performance) divided by move math.
+39	-4.31602e+08	New uncommented constant
+0	0	0: Asteroid vs. Rock
+0	1	1: Plasma vs. Rock
+0	1	2: Gattling vs. Rock
+0	1	3: Disruptor vs. Rock
+0	1	4: Sniper vs. Rock
+0	1	5: Mini vs. Rock
+0	1	6: Cannon vs. Rock
+0	1	7: Galv vs. Rock
+0	1	8: Anti Base vs. Rock
+0	1	9: Seismic vs. Rock
+0	1	10: Nan vs. Rock
+0	1	11: AC Turret vs. Rock
+0	1	12: EMP vs. Rock
+0	1	13: More EMP vs. Rock
+0	1	14: Gas/HTT vs. Rock
+0	1	15: SkyRip vs. Rock
+0	1	16: Mine vs. Rock
+0	1	17: Stinger vs. Rock
+0	1	18: Lancer vs. Rock
+0	1	19: Ion vs. Rock
+1	0	0: Asteroid vs. Light Ship
+1	1	1: Plasma vs. Light Ship
+1	0.5	2: Gattling vs. Light Ship
+1	0.5	3: Disruptor vs. Light Ship
+1	0.25	4: Sniper vs. Light Ship
+1	2	5: Mini vs. Light Ship
+1	0	6: Cannon vs. Light Ship
+1	0	7: Galv vs. Light Ship
+1	1	8: Anti Base vs. Light Ship
+1	0	9: Seismic vs. Light Ship
+1	0	10: Nan vs. Light Ship
+1	1	11: AC Turret vs. Light Ship
+1	0.25	12: EMP vs. Light Ship
+1	1	13: More EMP vs. Light Ship
+1	0.75	14: Gas/HTT vs. Light Ship
+1	1	15: SkyRip vs. Light Ship
+1	0.5	16: Mine vs. Light Ship
+1	0.5	17: Stinger vs. Light Ship
+1	0.25	18: Lancer vs. Light Ship
+1	1	19: Ion vs. Light Ship
+2	0	0: Asteroid vs. Medium Ship
+2	1	1: Plasma vs. Medium Ship
+2	0.75	2: Gattling vs. Medium Ship
+2	0.75	3: Disruptor vs. Medium Ship
+2	0.5	4: Sniper vs. Medium Ship
+2	0.4	5: Mini vs. Medium Ship
+2	0	6: Cannon vs. Medium Ship
+2	0	7: Galv vs. Medium Ship
+2	0.5	8: Anti Base vs. Medium Ship
+2	0	9: Seismic vs. Medium Ship
+2	0	10: Nan vs. Medium Ship
+2	1	11: AC Turret vs. Medium Ship
+2	0.5	12: EMP vs. Medium Ship
+2	0.5	13: More EMP vs. Medium Ship
+2	0.5	14: Gas/HTT vs. Medium Ship
+2	1	15: SkyRip vs. Medium Ship
+2	0.75	16: Mine vs. Medium Ship
+2	0.75	17: Stinger vs. Medium Ship
+2	0.5	18: Lancer vs. Medium Ship
+2	0.5	19: Ion vs. Medium Ship
+3	0	0: Asteroid vs. Heavy Ship
+3	1	1: Plasma vs. Heavy Ship
+3	1.6	2: Gattling vs. Heavy Ship
+3	4	3: Disruptor vs. Heavy Ship
+3	4	4: Sniper vs. Heavy Ship
+3	0.5	5: Mini vs. Heavy Ship
+3	0	6: Cannon vs. Heavy Ship
+3	0	7: Galv vs. Heavy Ship
+3	3	8: Anti Base vs. Heavy Ship
+3	0	9: Seismic vs. Heavy Ship
+3	0	10: Nan vs. Heavy Ship
+3	1	11: AC Turret vs. Heavy Ship
+3	4	12: EMP vs. Heavy Ship
+3	3	13: More EMP vs. Heavy Ship
+3	3	14: Gas/HTT vs. Heavy Ship
+3	1	15: SkyRip vs. Heavy Ship
+3	1.6	16: Mine vs. Heavy Ship
+3	4	17: Stinger vs. Heavy Ship
+3	4	18: Lancer vs. Heavy Ship
+3	3	19: Ion vs. Heavy Ship
+4	0	0: Asteroid vs. Super Heavy Ship
+4	1	1: Plasma vs. Super Heavy Ship
+4	1	2: Gattling vs. Super Heavy Ship
+4	1.33	3: Disruptor vs. Super Heavy Ship
+4	1	4: Sniper vs. Super Heavy Ship
+4	0.5	5: Mini vs. Super Heavy Ship
+4	0	6: Cannon vs. Super Heavy Ship
+4	0	7: Galv vs. Super Heavy Ship
+4	1	8: Anti Base vs. Super Heavy Ship
+4	0	9: Seismic vs. Super Heavy Ship
+4	0	10: Nan vs. Super Heavy Ship
+4	1	11: AC Turret vs. Super Heavy Ship
+4	1	12: EMP vs. Super Heavy Ship
+4	1	13: More EMP vs. Super Heavy Ship
+4	1	14: Gas/HTT vs. Super Heavy Ship
+4	1	15: SkyRip vs. Super Heavy Ship
+4	1	16: Mine vs. Super Heavy Ship
+4	1.33	17: Stinger vs. Super Heavy Ship
+4	1	18: Lancer vs. Super Heavy Ship
+4	1	19: Ion vs. Super Heavy Ship
+5	0	0: Asteroid vs. Utility Ship
+5	1	1: Plasma vs. Utility Ship
+5	0.7	2: Gattling vs. Utility Ship
+5	0.5	3: Disruptor vs. Utility Ship
+5	0.4	4: Sniper vs. Utility Ship
+5	0.25	5: Mini vs. Utility Ship
+5	0	6: Cannon vs. Utility Ship
+5	0	7: Galv vs. Utility Ship
+5	0.5	8: Anti Base vs. Utility Ship
+5	0	9: Seismic vs. Utility Ship
+5	0	10: Nan vs. Utility Ship
+5	1	11: AC Turret vs. Utility Ship
+5	0.25	12: EMP vs. Utility Ship
+5	0.5	13: More EMP vs. Utility Ship
+5	0.5	14: Gas/HTT vs. Utility Ship
+5	0.9	15: SkyRip vs. Utility Ship
+5	0.65	16: Mine vs. Utility Ship
+5	0.5	17: Stinger vs. Utility Ship
+5	0.4	18: Lancer vs. Utility Ship
+5	0.5	19: Ion vs. Utility Ship
+6	0	0: Asteroid vs. Light Base
+6	1	1: Plasma vs. Light Base
+6	1.5	2: Gattling vs. Light Base
+6	4	3: Disruptor vs. Light Base
+6	4	4: Sniper vs. Light Base
+6	0.5	5: Mini vs. Light Base
+6	0	6: Cannon vs. Light Base
+6	0	7: Galv vs. Light Base
+6	3	8: Anti Base vs. Light Base
+6	0	9: Seismic vs. Light Base
+6	0	10: Nan vs. Light Base
+6	1	11: AC Turret vs. Light Base
+6	4	12: EMP vs. Light Base
+6	3	13: More EMP vs. Light Base
+6	0.9374	14: Gas/HTT vs. Light Base
+6	1	15: SkyRip vs. Light Base
+6	1.5	16: Mine vs. Light Base
+6	4	17: Stinger vs. Light Base
+6	4	18: Lancer vs. Light Base
+6	0.42	19: Ion vs. Light Base
+7	1	0: Asteroid vs. Heavy Base
+7	1	1: Plasma vs. Heavy Base
+7	1.5	2: Gattling vs. Heavy Base
+7	4	3: Disruptor vs. Heavy Base
+7	4	4: Sniper vs. Heavy Base
+7	0.5	5: Mini vs. Heavy Base
+7	10	6: Cannon vs. Heavy Base
+7	0	7: Galv vs. Heavy Base
+7	3	8: Anti Base vs. Heavy Base
+7	4	9: Seismic vs. Heavy Base
+7	0	10: Nan vs. Heavy Base
+7	1	11: AC Turret vs. Heavy Base
+7	10	12: EMP vs. Heavy Base
+7	4	13: More EMP vs. Heavy Base
+7	3	14: Gas/HTT vs. Heavy Base
+7	1	15: SkyRip vs. Heavy Base
+7	1.5	16: Mine vs. Heavy Base
+7	4	17: Stinger vs. Heavy Base
+7	4	18: Lancer vs. Heavy Base
+7	3	19: Ion vs. Heavy Base
+8	1	0: Asteroid vs. Ship Shields
+8	1	1: Plasma vs. Ship Shields
+8	1	2: Gattling vs. Ship Shields
+8	1	3: Disruptor vs. Ship Shields
+8	1	4: Sniper vs. Ship Shields
+8	1	5: Mini vs. Ship Shields
+8	15	6: Cannon vs. Ship Shields
+8	10	7: Galv vs. Ship Shields
+8	1	8: Anti Base vs. Ship Shields
+8	10	9: Seismic vs. Ship Shields
+8	10	10: Nan vs. Ship Shields
+8	1	11: AC Turret vs. Ship Shields
+8	15	12: EMP vs. Ship Shields
+8	15	13: More EMP vs. Ship Shields
+8	1	14: Gas/HTT vs. Ship Shields
+8	1	15: SkyRip vs. Ship Shields
+8	1	16: Mine vs. Ship Shields
+8	1	17: Stinger vs. Ship Shields
+8	1	18: Lancer vs. Ship Shields
+8	1	19: Ion vs. Ship Shields
+9	15	0: Asteroid vs. Light Base Shields
+9	1	1: Plasma vs. Light Base Shields
+9	1	2: Gattling vs. Light Base Shields
+9	1	3: Disruptor vs. Light Base Shields
+9	1	4: Sniper vs. Light Base Shields
+9	1	5: Mini vs. Light Base Shields
+9	1	6: Cannon vs. Light Base Shields
+9	1	7: Galv vs. Light Base Shields
+9	1	8: Anti Base vs. Light Base Shields
+9	1	9: Seismic vs. Light Base Shields
+9	1	10: Nan vs. Light Base Shields
+9	1	11: AC Turret vs. Light Base Shields
+9	1	12: EMP vs. Light Base Shields
+9	1	13: More EMP vs. Light Base Shields
+9	1	14: Gas/HTT vs. Light Base Shields
+9	1	15: SkyRip vs. Light Base Shields
+9	1	16: Mine vs. Light Base Shields
+9	1	17: Stinger vs. Light Base Shields
+9	1	18: Lancer vs. Light Base Shields
+9	1	19: Ion vs. Light Base Shields
+10	0	0: Asteroid vs. Heavy Base Shields
+10	1	1: Plasma vs. Heavy Base Shields
+10	1	2: Gattling vs. Heavy Base Shields
+10	0.95	3: Disruptor vs. Heavy Base Shields
+10	0.9	4: Sniper vs. Heavy Base Shields
+10	1.1	5: Mini vs. Heavy Base Shields
+10	1	6: Cannon vs. Heavy Base Shields
+10	1	7: Galv vs. Heavy Base Shields
+10	1	8: Anti Base vs. Heavy Base Shields
+10	1	9: Seismic vs. Heavy Base Shields
+10	1	10: Nan vs. Heavy Base Shields
+10	1	11: AC Turret vs. Heavy Base Shields
+10	1	12: EMP vs. Heavy Base Shields
+10	1	13: More EMP vs. Heavy Base Shields
+10	1	14: Gas/HTT vs. Heavy Base Shields
+10	0	15: SkyRip vs. Heavy Base Shields
+10	0	16: Mine vs. Heavy Base Shields
+10	0	17: Stinger vs. Heavy Base Shields
+10	0	18: Lancer vs. Heavy Base Shields
+10	1	19: Ion vs. Heavy Base Shields
+11	0	0: Asteroid vs. Probe
+11	1	1: Plasma vs. Probe
+11	0.85	2: Gattling vs. Probe
+11	0.5	3: Disruptor vs. Probe
+11	0.25	4: Sniper vs. Probe
+11	0.5	5: Mini vs. Probe
+11	0	6: Cannon vs. Probe
+11	0	7: Galv vs. Probe
+11	0.75	8: Anti Base vs. Probe
+11	0	9: Seismic vs. Probe
+11	0	10: Nan vs. Probe
+11	1	11: AC Turret vs. Probe
+11	0.25	12: EMP vs. Probe
+11	0.75	13: More EMP vs. Probe
+11	0.75	14: Gas/HTT vs. Probe
+11	1	15: SkyRip vs. Probe
+11	0.85	16: Mine vs. Probe
+11	0.5	17: Stinger vs. Probe
+11	0.25	18: Lancer vs. Probe
+11	0.75	19: Ion vs. Probe
+12	0	0: Asteroid vs. Ultra Light Base Armor
+12	0	1: Plasma vs. Ultra Light Base Armor
+12	0	2: Gattling vs. Ultra Light Base Armor
+12	0	3: Disruptor vs. Ultra Light Base Armor
+12	0	4: Sniper vs. Ultra Light Base Armor
+12	0	5: Mini vs. Ultra Light Base Armor
+12	0	6: Cannon vs. Ultra Light Base Armor
+12	0	7: Galv vs. Ultra Light Base Armor
+12	1	8: Anti Base vs. Ultra Light Base Armor
+12	1	9: Seismic vs. Ultra Light Base Armor
+12	1	10: Nan vs. Ultra Light Base Armor
+12	0	11: AC Turret vs. Ultra Light Base Armor
+12	0	12: EMP vs. Ultra Light Base Armor
+12	1	13: More EMP vs. Ultra Light Base Armor
+12	1	14: Gas/HTT vs. Ultra Light Base Armor
+12	0	15: SkyRip vs. Ultra Light Base Armor
+12	0	16: Mine vs. Ultra Light Base Armor
+12	0	17: Stinger vs. Ultra Light Base Armor
+12	0	18: Lancer vs. Ultra Light Base Armor
+12	1	19: Ion vs. Ultra Light Base Armor
+13	0	0: Asteroid vs. Ultra Light Base Shields
+13	0	1: Plasma vs. Ultra Light Base Shields
+13	0	2: Gattling vs. Ultra Light Base Shields
+13	0	3: Disruptor vs. Ultra Light Base Shields
+13	0	4: Sniper vs. Ultra Light Base Shields
+13	0	5: Mini vs. Ultra Light Base Shields
+13	0	6: Cannon vs. Ultra Light Base Shields
+13	0	7: Galv vs. Ultra Light Base Shields
+13	1	8: Anti Base vs. Ultra Light Base Shields
+13	1	9: Seismic vs. Ultra Light Base Shields
+13	0	10: Nan vs. Ultra Light Base Shields
+13	0	11: AC Turret vs. Ultra Light Base Shields
+13	0	12: EMP vs. Ultra Light Base Shields
+13	2	13: More EMP vs. Ultra Light Base Shields
+13	1	14: Gas/HTT vs. Ultra Light Base Shields
+13	0	15: SkyRip vs. Ultra Light Base Shields
+13	0	16: Mine vs. Ultra Light Base Shields
+13	0	17: Stinger vs. Ultra Light Base Shields
+13	0	18: Lancer vs. Ultra Light Base Shields
+13	1	19: Ion vs. Ultra Light Base Shields
+14	0	0: Asteroid vs. Large Ship Shields
+14	1	1: Plasma vs. Large Ship Shields
+14	0.85	2: Gattling vs. Large Ship Shields
+14	0.25	3: Disruptor vs. Large Ship Shields
+14	0.25	4: Sniper vs. Large Ship Shields
+14	0.25	5: Mini vs. Large Ship Shields
+14	0	6: Cannon vs. Large Ship Shields
+14	0	7: Galv vs. Large Ship Shields
+14	0.5	8: Anti Base vs. Large Ship Shields
+14	0	9: Seismic vs. Large Ship Shields
+14	0	10: Nan vs. Large Ship Shields
+14	1	11: AC Turret vs. Large Ship Shields
+14	0.25	12: EMP vs. Large Ship Shields
+14	0.25	13: More EMP vs. Large Ship Shields
+14	0.25	14: Gas/HTT vs. Large Ship Shields
+14	1	15: SkyRip vs. Large Ship Shields
+14	0.85	16: Mine vs. Large Ship Shields
+14	0.25	17: Stinger vs. Large Ship Shields
+14	0.25	18: Lancer vs. Large Ship Shields
+14	0.5	19: Ion vs. Large Ship Shields
+15	1	0: Asteroid vs. Uncommented defense constant
+15	1	1: Plasma vs. Uncommented defense constant
+15	1	2: Gattling vs. Uncommented defense constant
+15	2.5	3: Disruptor vs. Uncommented defense constant
+15	2	4: Sniper vs. Uncommented defense constant
+15	1	5: Mini vs. Uncommented defense constant
+15	1.5	6: Cannon vs. Uncommented defense constant
+15	1	7: Galv vs. Uncommented defense constant
+15	1.5	8: Anti Base vs. Uncommented defense constant
+15	2	9: Seismic vs. Uncommented defense constant
+15	2	10: Nan vs. Uncommented defense constant
+15	1	11: AC Turret vs. Uncommented defense constant
+15	2	12: EMP vs. Uncommented defense constant
+15	2	13: More EMP vs. Uncommented defense constant
+15	1.5	14: Gas/HTT vs. Uncommented defense constant
+15	1	15: SkyRip vs. Uncommented defense constant
+15	1	16: Mine vs. Uncommented defense constant
+15	2.5	17: Stinger vs. Uncommented defense constant
+15	2	18: Lancer vs. Uncommented defense constant
+15	1.5	19: Ion vs. Uncommented defense constant
+16	0	0: Asteroid vs. Uncommented defense constant
+16	1	1: Plasma vs. Uncommented defense constant
+16	0.75	2: Gattling vs. Uncommented defense constant
+16	0.75	3: Disruptor vs. Uncommented defense constant
+16	0.5	4: Sniper vs. Uncommented defense constant
+16	0.25	5: Mini vs. Uncommented defense constant
+16	0	6: Cannon vs. Uncommented defense constant
+16	0	7: Galv vs. Uncommented defense constant
+16	0.5	8: Anti Base vs. Uncommented defense constant
+16	0	9: Seismic vs. Uncommented defense constant
+16	0	10: Nan vs. Uncommented defense constant
+16	1	11: AC Turret vs. Uncommented defense constant
+16	0.25	12: EMP vs. Uncommented defense constant
+16	0.5	13: More EMP vs. Uncommented defense constant
+16	0.5	14: Gas/HTT vs. Uncommented defense constant
+16	1	15: SkyRip vs. Uncommented defense constant
+16	0.75	16: Mine vs. Uncommented defense constant
+16	0.75	17: Stinger vs. Uncommented defense constant
+16	0.5	18: Lancer vs. Uncommented defense constant
+16	0.5	19: Ion vs. Uncommented defense constant
+17	1	0: Asteroid vs. Uncommented defense constant
+17	1	1: Plasma vs. Uncommented defense constant
+17	1	2: Gattling vs. Uncommented defense constant
+17	1	3: Disruptor vs. Uncommented defense constant
+17	1	4: Sniper vs. Uncommented defense constant
+17	1	5: Mini vs. Uncommented defense constant
+17	15	6: Cannon vs. Uncommented defense constant
+17	10	7: Galv vs. Uncommented defense constant
+17	2	8: Anti Base vs. Uncommented defense constant
+17	15	9: Seismic vs. Uncommented defense constant
+17	15	10: Nan vs. Uncommented defense constant
+17	1	11: AC Turret vs. Uncommented defense constant
+17	15	12: EMP vs. Uncommented defense constant
+17	15	13: More EMP vs. Uncommented defense constant
+17	2	14: Gas/HTT vs. Uncommented defense constant
+17	1	15: SkyRip vs. Uncommented defense constant
+17	1	16: Mine vs. Uncommented defense constant
+17	1	17: Stinger vs. Uncommented defense constant
+17	1	18: Lancer vs. Uncommented defense constant
+17	1	19: Ion vs. Uncommented defense constant
+18	0	0: Asteroid vs. Uncommented defense constant
+18	1	1: Plasma vs. Uncommented defense constant
+18	0.75	2: Gattling vs. Uncommented defense constant
+18	0.5	3: Disruptor vs. Uncommented defense constant
+18	0.4	4: Sniper vs. Uncommented defense constant
+18	0.25	5: Mini vs. Uncommented defense constant
+18	0	6: Cannon vs. Uncommented defense constant
+18	0	7: Galv vs. Uncommented defense constant
+18	0.75	8: Anti Base vs. Uncommented defense constant
+18	0	9: Seismic vs. Uncommented defense constant
+18	0	10: Nan vs. Uncommented defense constant
+18	0.05	11: AC Turret vs. Uncommented defense constant
+18	0.25	12: EMP vs. Uncommented defense constant
+18	0.5	13: More EMP vs. Uncommented defense constant
+18	0.5	14: Gas/HTT vs. Uncommented defense constant
+18	1	15: SkyRip vs. Uncommented defense constant
+18	0.75	16: Mine vs. Uncommented defense constant
+18	0.5	17: Stinger vs. Uncommented defense constant
+18	0.4	18: Lancer vs. Uncommented defense constant
+18	0.75	19: Ion vs. Uncommented defense constant
+19	1	0: Asteroid vs. Uncommented defense constant
+19	1	1: Plasma vs. Uncommented defense constant
+19	1	2: Gattling vs. Uncommented defense constant
+19	1.5	3: Disruptor vs. Uncommented defense constant
+19	1	4: Sniper vs. Uncommented defense constant
+19	1	5: Mini vs. Uncommented defense constant
+19	0	6: Cannon vs. Uncommented defense constant
+19	0	7: Galv vs. Uncommented defense constant
+19	1.25	8: Anti Base vs. Uncommented defense constant
+19	0	9: Seismic vs. Uncommented defense constant
+19	0	10: Nan vs. Uncommented defense constant
+19	1	11: AC Turret vs. Uncommented defense constant
+19	15	12: EMP vs. Uncommented defense constant
+19	15	13: More EMP vs. Uncommented defense constant
+19	1.5	14: Gas/HTT vs. Uncommented defense constant
+19	0.25	15: SkyRip vs. Uncommented defense constant
+19	0.25	16: Mine vs. Uncommented defense constant
+19	1	17: Stinger vs. Uncommented defense constant
+19	1	18: Lancer vs. Uncommented defense constant
+19	0.25	19: Ion vs. Uncommented defense constant

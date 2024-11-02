@@ -1,0 +1,8 @@
+ID	STRENGTH	LOAD TIME	LIFE SPAN	SIGNATURE	HIT POINTS	DEFENSE CONSTANT ID	ABILITIES	ICON NAME	COLOR R G B A PCT	RADIUS	ROTATION	MODEL NAME	TEXTURE NAME	LAUNCHER SIGNATURE	MASS	PART MASK	EXPENDABLE SIZE	COPY OF NAME
+21	1.5	3	2	1	35	11 (Probe)		missle	0 0 0 0	5	90		fxmine	0	0.25	1	1	Counter 1
+50	3	3	2	1	35	11 (Probe)		missle	0 0 0 0	5	90		fxmine	0	0.25	2	1	Hvy Counter 1
+26	3.375	3	2	1	35	11 (Probe)		missle	0 0 0 0	5	90		fxmine	0	0.25	1	1	Counter 3
+27	2.25	3	2	1	35	11 (Probe)		missle	0 0 0 0	5	90		fxmine	0	0.25	1	1	Counter 2
+53	4.5	3	2	1	35	11 (Probe)		missle	0 0 0 0	5	90		fxmine	0	0.25	2	1	Hvy Counter 2
+54	6.75	3	2	1	35	11 (Probe)		missle	0 0 0 0	5	90		fxmine	0	0.25	2	1	Hvy Counter 3
+117	4	8	8	2	100	11 (Probe)		missle	0 0 0 0	5	180		fxmine	0	0.1	1	1	Flare

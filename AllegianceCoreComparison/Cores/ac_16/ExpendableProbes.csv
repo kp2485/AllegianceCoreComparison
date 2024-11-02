@@ -1,0 +1,47 @@
+ID	SCAN RANGE	TIME TO LIVE	DISPURSION	ACCURACY	AMMO	PROJECTILE TYPE ID	AMBIENT SFX ID	TIME TO RIP	LOAD TIME	LIFE SPAN	SIGNATURE	HIT POINTS	DEFENSE CONSTANT ID	ABILITIES	ICON NAME	COLOR R G B A PCT	RADIUS	ROTATION	MODEL NAME	TEXTURE NAME	LAUNCHER SIGNATURE	MASS	PART MASK	EXPENDABLE SIZE	COPY OF NAME
+22	500	0.2	0.01	0.75	0	-1	720	-1	2	3600	0.3	25	11 (Probe)		probe	0 0 0 0	6	90	utl23		0	1	1	2	EWS Probe 1
+6	500	0.1	0.02	0.75	-1	51	720	30	5	60	10	200	11 (Probe)	CanQuickReady CanRipcord CanShootShips CanShootMissiles 	ripcordprobe	0 0 0 0	10	0	utl74		0	5	1	8	Teleport Probe 1
+17	3000	0.2	0.01	0.75	0	-1	720	-1	2	7	10	25	11 (Probe)		pulseprobe	0 0 0 0	6	90	utl23		0	1	2	1	Pulse Probe 2
+15	600	0.2	0.01	0.75	0	-1	720	-1	2	3600	0.25	25	11 (Probe)		probe	0 0 0 0	6	90	utl23		0	1	1	2	EWS Probe 2
+16	700	0.2	0.01	0.75	0	-1	720	-1	2	3600	0.2	25	11 (Probe)		probe	0 0 0 0	6	90	utl23		0	1	1	1	EWS Probe 3
+19	500	0.2	0.01	0.75	0	-1	720	-1	2	1200	0.2	25	11 (Probe)	CanRescue 	pickupprobe	0 0 0 0	6	90	utl04		0	5	1	2	Rescue
+2	500	0.2	0.01	0.75	0	-1	720	-1	2	1800	0.4	25	11 (Probe)	CanRescueAny 	pickupprobe	0 0 0 0	6	90	utl04		0	10	1	2	Sanctuary
+1000	1200	0.5	0.007	1	20	204	720	-1	2	13	0.5	50	11 (Probe)	CanQuickReady CanShootShips CanShootTargetOnly 	dn_hipdcm	0 0 0 0	4	90	acs02		0	1	4	2	Combat Drone 1
+1001	1200	0.5	0.005	1	20	204	720	-1	1.5	14	0.5	50	11 (Probe)	CanQuickReady CanShootShips CanShootTargetOnly 	dn_hipdcm	0 0 0 0	4	120	acs02		0	1	4	2	Combat Drone 2
+1002	600	0.25	0.045	0.25	20	202	720	-1	4	30	0.5	50	11 (Probe)	CanQuickReady CanShootTargetOnly 	dn_hipdst	0 0 0 0	4	90	utl02		0	3	8	3	Station Drone 1
+800	1200	0.5	0.003	1	24	204	720	-1	1	15	0.5	50	11 (Probe)	CanQuickReady CanShootShips CanShootTargetOnly 	dn_hipdcm	0 0 0 0	4	150	acs02		0	1	4	2	Combat Drone 3
+850	600	0.2	0.04	0.25	25	202	720	-1	3	30	0.5	50	11 (Probe)	CanQuickReady CanShootTargetOnly 	dn_hipdst	0 0 0 0	4	90	utl02		0	3	8	3	Station Drone 2
+861	600	0.16	0.05	0.25	25	203	720	-1	3	30	0.5	50	11 (Probe)	CanQuickReady CanShootTargetOnly 	dn_hipdsh	0 0 0 0	4	90	utl02		0	10	32	6	Hvy Station 2
+862	600	0.2	0.05	0.25	20	203	720	-1	4	30	0.5	50	11 (Probe)	CanQuickReady CanShootTargetOnly 	dn_hipdsh	0 0 0 0	4	90	utl02		0	10	32	6	Hvy Station 1
+871	800	0.48	0.01	1	25	205	720	-1	1.5	30	0.5	50	11 (Probe)	CanQuickReady CanShootTargetOnly 	dn_hipdch	0 0 0 0	4	90	acs02		0	4	4	2	Hvy Combat 2
+872	800	0.6	0.01	1	20	205	720	-1	2	30	0.5	50	11 (Probe)	CanQuickReady CanShootTargetOnly 	dn_hipdch	0 0 0 0	4	90	acs02		0	4	4	2	Hvy Combat 1
+600	500	0.1	0.02	0.75	-1	51	720	15	5	60	10	200	11 (Probe)	CanQuickReady CanRipcord CanShootShips CanShootMissiles 	ripcordprobe	0 0 0 0	10	0	utl74		0	5	1	8	Teleport Probe 2
+30	300	0.5	0	1	5	16	504	-1	4	15	0.5	25	11 (Probe)	CanQuickReady CanShootShips CanShootMissiles 	dn_hipdex	0 0 0 0	4	120	proxexpl		0	2	2048	2	Plas Gen 1
+38	300	0.5	0	1	6	17	504	-1	4	18	0.5	25	11 (Probe)	CanQuickReady CanShootShips CanShootMissiles 	dn_hipdex	0 0 0 0	4	120	proxexpl		0	2	2048	2	Plas Gen 2
+47	375	0.5	0	1	7	18	504	-1	4	21	0.5	25	11 (Probe)	CanQuickReady CanShootShips CanShootMissiles 	dn_hipdex	0 0 0 0	4	120	proxexpl		0	2	2048	2	Plas Gen 3
+48	225	0.5	0	1	4	19	504	-1	4	7	0.5	25	11 (Probe)	CanQuickReady CanShootShips CanShootMissiles 	dn_hipdeh	0 0 0 0	4	120	heavyexp		0	2	1024	1	Hvy Plas Gen 1
+49	225	0.5	0	1	5	20	504	-1	4	7	0.5	25	11 (Probe)	CanQuickReady CanShootShips CanShootMissiles 	dn_hipdeh	0 0 0 0	4	120	heavyexp		0	2	1024	1	Hvy Plas Gen 2
+51	500	0.2	0.01	0.75	0	-1	720	-1	2	1200	0.2	25	11 (Probe)	CanRescue 	pickupprobe	0 0 0 0	6	90	utl04		0	5	1	2	Beacon
+86	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	utl105		0	1	16	10	Tower AC Drone
+87	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	acs63		0	1	16	10	Tower AC Drone
+88	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	utl205		0	1	16	10	Tower AC Drone
+89	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	acs02		0	1	16	10	Tower AC Drone
+90	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	drgtow		0	1	16	10	Tower AC Drone
+92	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	utl403		0	1	16	10	Tower AC Drone
+100	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	utl01b		0	1	16	10	Tower SC Drone
+101	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	utl105		0	1	16	10	Tower SC Drone
+102	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	acs63		0	1	16	10	Tower SC Drone
+103	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	utl205		0	1	16	10	Tower SC Drone
+104	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	acs02		0	1	16	10	Tower SC Drone
+105	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	drgtow		0	1	16	10	Tower SC Drone
+106	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	tfdron		0	1	16	10	Tower SC Drone
+107	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	utl403		0	1	16	10	Tower SC Drone
+85	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	utl01b		0	1	16	10	Tower AC Drone
+97	250	0.02	1	1	-1	77	556	-1	1	18	0.5	25	11 (Probe)	CanQuickReady CanShootShips CanShootMissiles 	dn_hipdex	0 0 0 0	4	360	dn_ptlasbls		0	3	4096	2	Laser Blossom 1
+98	250	0.02	1	1	-1	78	557	-1	1	21	0.5	25	11 (Probe)	CanQuickReady CanShootShips CanShootMissiles 	dn_hipdex	0 0 0 0	4	360	dn_ptlasbls		0	3	4096	2	Laser Blossom 2
+109	1500	0.2	0.01	1	-1	32	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdta	0 0 0 0	6	90	faohshtwr		0	1	16	10	Tower AC Drone
+110	2000	0.15	0.01	1	-1	32	720	-1	5	1380	0.75	400	11 (Probe)	CanShootShips CanShootMissiles CanRescue 	dn_hipdta	0 0 0 0	6	90	ta_drac_st		0	1	16	10	Security Tower
+111	2000	0.5	0	1	-1	64	720	-1	5	1200	0.75	200	11 (Probe)	CanShootShips CanShootMissiles 	dn_hipdts	0 0 0 0	6	90	faohshtwr		0	1	16	10	Tower SC Drone
+112	2500	0.2	0.05	1	-1	97	720	-1	5	2500	0.75	600	11 (Probe)	CanShootShips CanShootMissiles CanRescue 	dn_hipdts	0 0 0 0	15	90	ta_drac_st		0	1	16	10	Hvy Sec. Tower
+73	600	0.25	0.075	0.25	20	90	720	-1	3	30	0.5	50	11 (Probe)	CanQuickReady CanShootTargetOnly 	dn_hipdst	0 0 0 0	4	90	utl02		0	3	8	3	Seismic Drone
+113	3000	0.2	0.01	0.75	0	-1	720	-1	2	5	10	25	11 (Probe)		pulseprobe	0 0 0 0	6	90	utl23		0	1	2	1	Pulse Probe 1
