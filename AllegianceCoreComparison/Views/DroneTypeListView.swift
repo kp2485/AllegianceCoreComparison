@@ -13,19 +13,22 @@ struct DroneTypeListView: View {
     var body: some View {
         List(droneTypes) { drone in
             VStack(alignment: .leading, spacing: 5) {
-                Text(drone.name)
-                    .font(.headline)
-                Text(drone.description)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .lineLimit(2)
-                HStack {
-                    Text("ID: \(drone.id)")
-                    Spacer()
-                    Text("Price: \(drone.price)")
-                }
-                .font(.caption)
-                .foregroundColor(.secondary)
+                Text("Name: \(drone.name)").font(.headline)
+                Text("ID: \(drone.id)")
+                Text("Shoot Skill: \(drone.shootSkill)")
+                Text("Move Skill: \(drone.moveSkill)")
+                Text("Bravery: \(drone.bravery)")
+                Text("Pilot Type: \(drone.pilotType)")
+                Text("Hull Type ID: \(drone.hullTypeId)")
+                Text("Expendable Type ID: \(drone.expendableTypeId)")
+                Text("Price: \(drone.price)")
+                Text("Time to Build: \(drone.timeToBuild)")
+                Text("Model Name: \(drone.modelName)")
+                Text("Icon Name: \(drone.iconName)")
+                Text("Description: \(drone.description)")
+                Text("Group: \(drone.group)")
+                Text("Tech Required: \(drone.techRequired)")
+                Text("Tech Effect: \(drone.techEffect)")
             }
             .padding(.vertical, 5)
         }
