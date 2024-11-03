@@ -8,20 +8,27 @@
 import SwiftUI
 
 struct DroneTypeListView: View {
-    let drones: [DroneType]
+    let droneTypes: [DroneType]
 
     var body: some View {
-        List(drones) { drone in
-            VStack(alignment: .leading) {
-                Text(drone.name).font(.headline)
-                Text("Speed: \(drone.speed)")
-                Text("Durability: \(drone.durability)")
-                Text("Description: \(drone.description)")
+        List(droneTypes) { drone in
+            VStack(alignment: .leading, spacing: 5) {
+                Text(drone.name)
+                    .font(.headline)
+                Text(drone.description)
                     .font(.subheadline)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+                    .lineLimit(2)
+                HStack {
+                    Text("ID: \(drone.id)")
+                    Spacer()
+                    Text("Price: \(drone.price)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
             }
             .padding(.vertical, 5)
         }
-        .navigationTitle("Drones")
+        .navigationTitle("Drone Types")
     }
 }
