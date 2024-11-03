@@ -9,22 +9,46 @@ import Foundation
 
 struct Development: Identifiable, CSVParsable {
     let id: Int
+    let completionSfxId: Int
+    let price: Int
+    let timeToBuild: Int
+    let modelName: String
+    let iconName: String
     let name: String
-    let cost: Double
-    let duration: Double
     let description: String
+    let group: Int
+    let techRequired: String
+    let techEffect: String
 
     init?(csvRow: [String]) {
-        guard csvRow.count >= 5,
-              let id = Int(csvRow[0]),
-              let cost = Double(csvRow[2]),
-              let duration = Double(csvRow[3]) else {
+        // Ensure the CSV row has at least 11 columns
+        guard csvRow.count >= 11 else {
+            print("Invalid CSV row: Not enough columns.")
             return nil
         }
+        
+        // Parse and validate integer fields
+        guard let id = Int(csvRow[0]),
+              let completionSfxId = Int(csvRow[1]),
+              let price = Int(csvRow[2]),
+              let timeToBuild = Int(csvRow[3]),
+              let group = Int(csvRow[8]) else {
+            print("Invalid data types in CSV row: \(csvRow)")
+            return nil
+        }
+        
+        // Assign string fields
         self.id = id
-        self.name = csvRow[1]
-        self.cost = cost
-        self.duration = duration
-        self.description = csvRow[4]
+        self.completionSfxId = completionSfxId
+        self.price = price
+        self.timeToBuild = timeToBuild
+        self.modelName = csvRow[4]
+        self.iconName = csvRow[5]
+        self.name = csvRow[6]
+        self.description = csvRow[7]
+        self.group = group
+        self.techRequired = csvRow[9]
+        self.techEffect = csvRow[10]
     }
 }
+

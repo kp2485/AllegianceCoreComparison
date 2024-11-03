@@ -11,17 +11,13 @@ struct DevelopmentListView: View {
     let developments: [Development]
 
     var body: some View {
-        List(developments) { development in
-            VStack(alignment: .leading) {
-                Text(development.name).font(.headline)
-                Text("Cost: \(development.cost)")
-                Text("Duration: \(development.duration)")
-                Text("Description: \(development.description)")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+            NavigationView {
+                List(developments) { development in
+                    NavigationLink(destination: DevelopmentDetailView(development: development)) {
+                        DevelopmentRowView(development: development)
+                    }
+                }
+                .navigationTitle("Developments")
             }
-            .padding(.vertical, 5)
         }
-        .navigationTitle("Developments")
-    }
 }
