@@ -12,17 +12,44 @@ struct ShipTypeListView: View {
 
     var body: some View {
         List(ships) { ship in
-            VStack(alignment: .leading) {
-                Text(ship.name).font(.headline)
-                Text("Speed: \(ship.speed)")
-                Text("Armor: \(ship.armor)")
-                Text("Crew Capacity: \(ship.crewCapacity)")
-                Text("Description: \(ship.description)")
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Name: \(ship.name)")
+                    .font(.headline)
+                Text("ID: \(ship.id)")
                     .font(.subheadline)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
+                
+                HStack {
+                    Text("Mass: \(ship.mass)")
+                    Spacer()
+                    Text("Signature: \(ship.signature)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
+                
+                HStack {
+                    Text("Speed: \(ship.speed)")
+                    Spacer()
+                    Text("Thrust: \(ship.thrust)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
+                
+                Text("Description: \(ship.description)")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                
+                HStack {
+                    Text("Tech Required: \(ship.techRequired)")
+                    Spacer()
+                    Text("Group: \(ship.group)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
             }
-            .padding(.vertical, 5)
+            .padding(.vertical, 8)
         }
-        .navigationTitle("Ships")
+        .navigationTitle("Types of Ships")
     }
 }
+
