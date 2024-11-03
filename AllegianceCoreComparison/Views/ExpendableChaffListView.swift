@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ExpendableChaffListView: View {
-    let expendableChaffs: [ExpendableChaff]
+    let chaffs: [ExpendableChaff]
 
     var body: some View {
-        List(expendableChaffs) { chaff in
+        List(chaffs) { chaff in
             VStack(alignment: .leading, spacing: 8) {
                 Text("Name: \(chaff.copyOfName)")
                     .font(.headline)

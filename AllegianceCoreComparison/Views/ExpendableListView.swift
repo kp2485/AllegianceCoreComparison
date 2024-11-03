@@ -10,50 +10,69 @@ import SwiftUI
 struct ExpendableListView: View {
     let expendables: [Expendable]
 
-
     var body: some View {
         List(expendables) { expendable in
-            VStack(alignment: .leading, spacing: 5) {
-                // Name and ID
+            VStack(alignment: .leading, spacing: 8) {
                 Text("Name: \(expendable.name)")
                     .font(.headline)
-                Text("EXPENDABLE ID: \(expendable.id)")
+                Text("ID: \(expendable.id)")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 
-                // Part Details
-                Text("Part ID: \(expendable.partID)")
-                Text("Amount: \(expendable.amount)")
-                Text("Successor Part ID: \(expendable.successorPartID)")
-                Text("Launch Count: \(expendable.launchCount)")
-                Text("Inventory Model: \(expendable.inventoryModel)")
-                Text("Price: \(expendable.price)")
-                Text("Time to Build: \(expendable.timeToBuild)")
-                Text("Model Name: \(expendable.modelName)")
-                Text("Icon Name: \(expendable.iconName)")
-                
-                // Description
-                Text("Description: \(expendable.description)")
-                    .font(.body)
-                    .foregroundColor(.primary)
-                
-                // Group and Tech Details
                 HStack {
-                    Text("Group: \(expendable.group)")
+                    Text("Part ID: \(expendable.partID)")
                     Spacer()
-                    Text("Tech Required: \(expendable.techRequired)")
+                    Text("Amount: \(expendable.amount)")
                 }
                 .font(.caption)
                 .foregroundColor(.secondary)
                 
-                Text("Tech Effect: \(expendable.techEffect)")
+                HStack {
+                    Text("Successor Part ID: \(expendable.successorPartID)")
+                    Spacer()
+                    Text("Launch Count: \(expendable.launchCount)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
+                
+                HStack {
+                    Text("Inventory Model: \(expendable.inventoryModel)")
+                    Spacer()
+                    Text("Price: \(expendable.price)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
+                
+                HStack {
+                    Text("Time to Build: \(expendable.timeToBuild)")
+                    Spacer()
+                    Text("Model Name: \(expendable.modelName)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
+                
+                HStack {
+                    Text("Icon Name: \(expendable.iconName)")
+                    Spacer()
+                    Text("Group: \(expendable.group)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
+                
+                Text("Description: \(expendable.description)")
                     .font(.caption)
                     .foregroundColor(.secondary)
+                
+                HStack {
+                    Text("Tech Required: \(expendable.techRequired)")
+                    Spacer()
+                    Text("Tech Effect: \(expendable.techEffect)")
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
             }
-            .padding(.vertical, 5)
+            .padding(.vertical, 8)
         }
         .navigationTitle("Expendables")
     }
 }
-
-

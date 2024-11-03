@@ -42,21 +42,53 @@ class CoreManager: ObservableObject {
     }
 
     private func loadData<T: CSVParsable>(fileName: String, coreName: String, type: T.Type) -> [T] {
-        let filePath = "Cores/\(coreName)/\(fileName)"
-
-        guard let path = Bundle.main.path(forResource: filePath, ofType: "csv") else {
-            print("File not found at path: \(filePath).csv")
-            return []
+            let filePath = "Cores/\(coreName)/\(fileName)"
+        
+            guard let path = Bundle.main.path(forResource: filePath, ofType: "csv") else {
+                print("File not found at path: \(filePath).csv")
+                return []
+            }
+        
+            do {
+                print("Loading file at path: \(path)")
+                let data = try String(contentsOfFile: path, encoding: .utf8)
+                let allRows = data.components(separatedBy: "\n")
+                
+                // Ensure there are rows to process
+                guard allRows.count > 1 else {
+                    print("No data found in file: \(filePath).csv")
+                    return []
+                }
+                
+                // Skip the header row
+                let dataRows = allRows.dropFirst()
+                
+                var parsedData: [T] = []
+                
+                for (index, row) in dataRows.enumerated() {
+                    let trimmedRow = row.trimmingCharacters(in: .whitespacesAndNewlines)
+                    
+                    // Skip empty rows
+                    if trimmedRow.isEmpty {
+                        print("Skipped empty row at line \(index + 2) in file: \(filePath).csv")
+                        continue
+                    }
+                    
+                    // Split by tab delimiter
+                    let columns = trimmedRow.components(separatedBy: "\t")
+                    
+                    // Attempt to parse the row into the model
+                    if let item = T(csvRow: columns) {
+                        parsedData.append(item)
+                    } else {
+                        print("Failed to parse CSV row at line \(index + 2) in file: \(filePath).csv: \(columns)")
+                    }
+                }
+                
+                return parsedData
+            } catch {
+                print("Error reading file at path \(path):", error)
+                return []
+            }
         }
-
-        do {
-            print("Loading file at path: \(path)")
-            let data = try String(contentsOfFile: path, encoding: .utf8)
-            let rows = data.components(separatedBy: "\n")
-            return rows.compactMap { T(csvRow: $0.components(separatedBy: "\t")) }
-        } catch {
-            print("Error reading file at path \(path):", error)
-            return []
-        }
-    }
 }

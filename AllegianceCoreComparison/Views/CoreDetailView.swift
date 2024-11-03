@@ -40,7 +40,7 @@ struct CoreDetailView: View {
                 case .cloaks:
                     CloakListView(cloaks: core.cloaks)
                 case .typesOfDrones:
-                    DroneTypeListView(drones: core.typesOfDrones)
+                    DroneTypeListView(droneTypes: core.typesOfDrones)
                 case .typesOfStations:
                     StationTypeListView(stations: core.typesOfStations)
                 case .typesOfTreasures:

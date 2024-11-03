@@ -8,7 +8,6 @@
 import Foundation
 
 struct Expendable: Identifiable, CSVParsable {
-    // MARK: - Properties
     let id: Int
     let partID: Int
     let amount: Int
@@ -25,9 +24,7 @@ struct Expendable: Identifiable, CSVParsable {
     let techRequired: String
     let techEffect: String
 
-    // MARK: - Initializer
     init?(csvRow: [String]) {
-        // Ensure the CSV row has at least 15 columns
         guard csvRow.count >= 15,
               let id = Int(csvRow[0]),
               let partID = Int(csvRow[1]),
@@ -36,8 +33,9 @@ struct Expendable: Identifiable, CSVParsable {
               let launchCount = Int(csvRow[4]),
               let price = Int(csvRow[6]),
               let timeToBuild = Int(csvRow[7]),
-              let group = Int(csvRow[12]) else {
-            print("Failed to parse CSV row: \(csvRow)")
+              let group = Int(csvRow[12])
+        else {
+            print("Invalid data types in CSV row: \(csvRow)")
             return nil
         }
 
@@ -46,16 +44,15 @@ struct Expendable: Identifiable, CSVParsable {
         self.amount = amount
         self.successorPartID = successorPartID
         self.launchCount = launchCount
-        self.inventoryModel = csvRow[5]
+        self.inventoryModel = csvRow[5].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Unknown" : csvRow[5]
         self.price = price
         self.timeToBuild = timeToBuild
-        self.modelName = csvRow[8]
-        self.iconName = csvRow[9]
-        self.name = csvRow[10]
-        self.description = csvRow[11]
+        self.modelName = csvRow[8].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Unknown" : csvRow[8]
+        self.iconName = csvRow[9].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Unknown" : csvRow[9]
+        self.name = csvRow[10].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Unnamed" : csvRow[10]
+        self.description = csvRow[11].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "No Description" : csvRow[11]
         self.group = group
-        self.techRequired = csvRow[13]
-        self.techEffect = csvRow[14]
+        self.techRequired = csvRow[13].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "None" : csvRow[13]
+        self.techEffect = csvRow[14].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "None" : csvRow[14]
     }
 }
-
