@@ -12,15 +12,14 @@ struct ConstantListView: View {
 
     var body: some View {
         List(constants) { constant in
-            VStack(alignment: .leading) {
-                Text(constant.name).font(.headline)
-                Text("Value: \(constant.value)")
-                Text("Description: \(constant.description)")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Comment: \(constant.comment)").font(.headline)
+                Text("Global Value: \(constant.globalValue)")
+                Text("ID: \(constant.id)")
             }
             .padding(.vertical, 5)
         }
         .navigationTitle("Constants")
     }
 }
+
