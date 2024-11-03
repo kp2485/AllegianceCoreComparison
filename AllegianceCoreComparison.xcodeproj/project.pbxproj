@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D62E20272CD71DB5006119D1 /* Cores in Resources */ = {isa = PBXBuildFile; fileRef = D62E20262CD71DB5006119D1 /* Cores */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D62E1E162CD69AF4006119D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		D62E1E052CD69AF2006119D1 /* AllegianceCoreComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllegianceCoreComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62E1E152CD69AF4006119D1 /* AllegianceCoreComparisonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllegianceCoreComparisonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62E1E1F2CD69AF4006119D1 /* AllegianceCoreComparisonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllegianceCoreComparisonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62E20262CD71DB5006119D1 /* Cores */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Cores; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		D62E1DFC2CD69AF2006119D1 = {
 			isa = PBXGroup;
 			children = (
+				D62E20262CD71DB5006119D1 /* Cores */,
 				D62E1E072CD69AF2006119D1 /* AllegianceCoreComparison */,
 				D62E1E182CD69AF4006119D1 /* AllegianceCoreComparisonTests */,
 				D62E1E222CD69AF4006119D1 /* AllegianceCoreComparisonUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62E20272CD71DB5006119D1 /* Cores in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
